@@ -1,5 +1,4 @@
-const API_URL = "http://localhost:5000/api/feedback";
-
+const API_URL = "https://student-feedback-system-4evk.onrender.com/api/feedback";
 // READ - Get all feedback
 async function loadFeedback() {
   try {
