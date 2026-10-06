@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>Student Feedback Management System</h1>
+
+    <div class="form-card">
+      <h2>Add / Update Feedback</h2>
+
+      <input type="hidden" id="feedbackId">
+
+      <label>Student Name</label>
+      <input type="text" id="studentName" placeholder="Enter student name">
+
+      <label>Course</label>
+      <input type="text" id="course" placeholder="Enter course name">
+
+      <label>Rating</label>
+      <select id="rating">
+        <option value="">Select Rating</option>
+        <option value="1">1 - Poor</option>
+        <option value="2">2 - Fair</option>
+        <option value="3">3 - Good</option>
+        <option value="4">4 - Very Good</option>
+        <option value="5">5 - Excellent</option>
+      </select>
+
+      <label>Comments</label>
+      <textarea id="comments" placeholder="Enter feedback"></textarea>
+
+      <button onclick="saveFeedback()">Save Feedback</button>
+      <button onclick="clearForm()" class="clear-btn">Clear</button>
+    </div>
+
+    <div class="feedback-section">
+      <h2>All Student Feedback</h2>
+
+      <div id="feedbackList">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
